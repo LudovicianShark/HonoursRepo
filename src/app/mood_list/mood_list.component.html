@@ -1,0 +1,27 @@
+<ActionBar title="List of Moods" backgroundColor="#FB6542">
+    <ActionItem ios.position="right">
+        <label text="Home" (tap)="Home()" col="1"></label>
+    </ActionItem>
+</ActionBar>
+<GridLayout rows="auto, *">
+<!-- <RadListView row="1" [items]="moodList" swipeActions="true" (itemSwipeProgressStarted)="onSwipeCellStarted($event)">
+<ng-template let-item="item" let-i="index">
+    <Label [text]="'Date: ' + item.date + ' Time: ' + item.time + ' Mood: ' + item.mood + ' Activity: ' + item.activity + ' Description: ' + item.desc" class="p-15"></Label>
+</ng-template>
+<GridLayout *tkListItemSwipeTemplate columns="*, auto">
+<StackLayout id="delete-view" col="1" (tap)="delete($event)" class="delete-view">
+    <Image src=""></Image>
+    </StackLayout>
+</GridLayout>
+</RadListView> -->
+ <RadListView row="2" [items]="moodList" swipeActions="true" (itemSwipeProgressStarted)="onSwipeCellStarted($event)">
+    <ng-template let-item="item" let-i="index">
+        <Label [text]="'Date: ' + item.date + ' Time: ' + item.time + '\n' + 'Mood: ' + item.mood + '\n' + 'Activity: ' + item.activity + '\n' + 'Description: ' + item.desc" class="p-15" textWrap=true></Label>
+    </ng-template>
+    <GridLayout *tkListItemSwipeTemplate columns="*, auto">
+    <StackLayout id="delete-view"  col="1" (tap)="delete($event)" class="delete-view">
+        <Image src=""></Image>
+    </StackLayout>
+    </GridLayout>
+    </RadListView>
+</GridLayout>

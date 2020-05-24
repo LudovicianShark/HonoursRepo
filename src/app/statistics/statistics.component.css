@@ -1,0 +1,67 @@
+  .top_label {
+    padding-top: 25;
+    padding-left: 70;
+    font-weight: 600;
+    font-size: xx-large;
+  }
+
+  .mid_label {
+    padding-top: 50;
+    padding-left: 50;
+    font-weight: 600;
+    font-size: xx-large;
+  }
+  .add-bar Image {
+    height: 25;
+    vertical-align: center;
+    margin-left: 10;
+    margin-right: 10;
+  }
+
+  .delete-view {
+    background-color: black;
+    padding: 20;
+  }
+
+  .text_box {
+    padding-top: 25;
+    padding-left: 50;
+    font-weight: 600;
+    font-size: xx-large;
+  }
+  .username {
+    border-width: 1;
+    width: 270;
+  }
+
+  .password {
+    border-width: 1;
+    width: 270;
+  }
+
+  .page{
+    color: whitesmoke;
+  }
+
+  .home-panel{
+    vertical-align: center;
+    font-size: 20;
+    margin: 15;
+}
+
+.description-label{
+    margin-bottom: 15;
+}
+
+.statlabel {
+  font-size: larger;
+  font-size: 25;
+  font-weight: 700;
+  padding: 10;
+}
+
+.graph {
+  width: 1500px;
+  height: 1500px;
+}
+

@@ -1,0 +1,19 @@
+<ActionBar title="Record your mood" backgroundColor="#3f681C">
+    <ActionItem ios.position="right">
+        <label text= "Home" (tap)="Home()" paddingright="20" ></label>
+    </ActionItem>
+</ActionBar>
+
+<GridLayout rows="auto, *">
+<StackLayout row="0" columns="*, auto" class="add-bar">
+    <TextField #dateTextField [(ngModel)]="date" hint="Enter the current date" col="0" ></TextField>
+    <TextField #timeTextField [(ngModel)]="time" hint="Enter the current time" col="0"></TextField>
+    <TextField #moodTextField [(ngModel)]="mood" hint="Enter your current mood" col="0" keyboardType="number"></TextField>
+    <TextField #activityTextField [(ngModel)]="activity" hint="Enter the current activity" col="0"></TextField>
+    <TextField #descTextField [(ngModel)]="desc" hint="Enter a description" col="0"></TextField>
+</StackLayout>
+<StackLayout row="1" columns="*, auto" class="add-bar">
+    <button text="add" (tap)="addMood()" col="1"></button>
+</StackLayout>
+
+</GridLayout>

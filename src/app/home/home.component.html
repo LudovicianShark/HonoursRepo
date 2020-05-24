@@ -1,0 +1,18 @@
+<ActionBar title="">
+    <ActionItem ios.position="right">
+        <label text= "Sign Out" (tap)="sign_out()" paddingright="20"></label>
+    </ActionItem>
+</ActionBar>
+
+<GridLayout columns="*, *" rows="*, *" width="auto" height="auto" backgroundColor="lightgray" >
+    <Label class="home_nav" (tap)="add()" text="Record your mood" row="0" col="0" backgroundColor="#3f681C"></Label>
+    <Image src="~/app/images/smile.png"></Image>
+    <Label class="home_nav" (tap)="List()" text="Mood Diary Entries" row="0" col="1" backgroundColor="#FB6542"></Label>
+    <Image src="~/app/images/book.png" row="0" col="1"></Image>
+    <Label class="home_nav" (tap)="Stats()" text="Statistics" row="1" col="0" backgroundColor="#FFBB00"></Label>
+    <Image src="~/app/images/bar-graph.png" row="1" col="0"></Image>
+    <Label class="home_nav" (tap)="Settings()" text="Settings" row="1" col="1" backgroundColor="#375E97"></Label>
+    <Image src="~/app/images/gear.png" row="1" col="1"></Image>
+  </GridLayout>
+
+

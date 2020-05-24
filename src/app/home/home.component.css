@@ -1,0 +1,35 @@
+.add-bar {
+    background-color: white;
+    padding: 5;
+  }
+  .add-bar Image {
+    height: 25;
+    vertical-align: center;
+    margin-left: 10;
+    margin-right: 10;
+  }
+  .add-bar TextField {
+    padding: 10;
+  }
+  GridLayout Label {
+    background-color: white;
+    border-bottom-width: 1;
+    border-bottom-color: gray;
+  }
+  .delete-view {
+    background-color: black;
+    padding: 20;
+  }
+  .delete-view Image {
+    color: black;
+    height: 10;
+    width: 10;
+  }
+
+  .home_nav {
+      font-size: 20em;
+      font-weight: 700;
+      text-align: center;
+      text-indent: 423px;
+
+  }

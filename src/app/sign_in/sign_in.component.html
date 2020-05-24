@@ -1,0 +1,21 @@
+<ActionBar title="">
+</ActionBar>
+
+<GridLayout rows="auto, *">
+<StackLayout row="0" columns="*, auto" class="sign_in_text" >
+    <label class=top_label text="Welcome back to the MoodDiary app!"></label>
+    <Image src="https://t3.ftcdn.net/jpg/02/02/93/50/240_F_202935035_d4Ae3009lLNFSvll3I0MqkORbPE6sPuL.jpg" size="12pi"></Image>
+    <label class=mid_label text="Please enter your login details to continue"></label>
+    <label class=text_box text="Username"></label>
+    <TextField #usernameTextField [(ngModel)]="uname" class="username" hint="Username" col="0"></TextField>
+    <label class=text_box text="Password"></label>
+    <TextField #passwordTextField [(ngModel)]="password" class="password" hint="Password" col="0" secure="true"></TextField>
+
+</StackLayout>
+
+<StackLayout row="1" columns="*, auto" class="add-bar" >
+    <button text="Sign In" (tap)="Sign_In()" col="1" backgroundColor="whitesmoke"></button>
+    <button text="Sign Up" (tap)="Sign_In()" col="1" backgroundColor="whitesmoke"></button>
+</StackLayout>
+
+</GridLayout>
